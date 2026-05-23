@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hinkalik</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #111;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .title {
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
+    .subtitle {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #aaa;
+    }
+
+    .text {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #ccc;
+    }
+
+    .links {
+        margin-top: 15px;
+    }
+
+    .link {
+        margin: 0 10px;
+        cursor: pointer;
+        position: relative;
+        text-decoration: none;
+        color: white;
+    }
+
+    
+    .tooltip {
+        visibility: hidden;
+        background: #222;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .link:hover .tooltip {
+        visibility: visible;
+    }
+
+    
+    .telegram {
+        color: white;
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    
+    <img src="pfp.jpg">
+
+    <div class="title">hello, i am hinkalik</div>
+    <div class="subtitle">developer, c++, python, java</div>
+
+    <div class="text">
+        if you want to msg me, you can find me on discord or telegram
+    </div>
+
+    <div class="links">
+        
+        <span class="link">
+            discord
+            <span class="tooltip">@hinkaliik</span>
+        </span>
+
+        
+        <a href="https://t.me/hinkaliik" class="link telegram" target="_blank">
+            telegram
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
